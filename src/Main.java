@@ -25,6 +25,6 @@ public class Main {
             System.out.println("Shipping Cost is : $" + shippingCost);//display shipping cost
         }
 
-        in.close(); // Close the Scanner
+        in.close(); // Close the Scanners
     }
 }
