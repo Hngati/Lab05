@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        // Create a Scanner object for user input
+        Scanner in = new Scanner(System.in);
+
+        // Prompt the user to enter their age
+        System.out.print("Please Enter your age: ");
+
+        // Read the input as an integer
+        if (in.hasNextInt()) {
+            int age = in.nextInt();
+
+            // Check if the age is 21 or older
+            if (age >= 21) {
+                System.out.println("You get a paper wristband.");
+            }
+        }
+
+        // Close the Scanner
+        in.close();
+    }
+}
