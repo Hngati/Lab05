@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+       
+        Scanner in = new Scanner(System.in); //  Scanner  for user 
+
+        
+        System.out.println("List of Party Affiliation below"); //  enter their party affiliation with letter
+        System.out.println("R for Republican");
+        System.out.println("I for Independent");
+        System.out.println("D for Democrat");
+        System.out.print("What is your party affiliation using  (D or R or I): ");
+
+        
+        String affiliation = in.next(); //  a String for user
+
+        
+        if (affiliation.equalsIgnoreCase("R")) { //response 
+            System.out.println("You get a Republican Elephant.");
+        } else if (affiliation.equalsIgnoreCase("I")) {
+            System.out.println("You get an Independent Person.");
+        } else if (affiliation.equalsIgnoreCase("D")) {
+            System.out.println("You get a Democratic Donkey.");
+        } else {
+            System.out.println(" Other.");
+        }
+
+        
+        in.close(); // Close
+    }
+}
