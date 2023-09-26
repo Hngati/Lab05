@@ -4,7 +4,6 @@ public class Main {
 
         Scanner in = new Scanner(System.in); //  Scanner for user input
 
-        // Prompt the user to enter their birth month
         System.out.print("Enter your birth month 1-12: "); // enter their birth month with numbers between 1-12
 
         if (in.hasNextInt()) {
