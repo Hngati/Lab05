@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner in = new Scanner(System.in); // Scannerfor user input
+
+
+        System.out.print(" first number: "); // fist number
+
+
+        if (in.hasNextDouble()) {
+            double num1 = in.nextDouble();
+            in.nextLine(); // Clear the newline character
+
+
+            System.out.print("second number: "); // second number
+
+
+            if (in.hasNextDouble()) {
+                double num2 = in.nextDouble();
+
+
+                if (num1 == num2) { // comparing the numbers
+                    System.out.println("The numbers are equal.");
+                } else if (num1 < num2) {
+                    System.out.println(num1 + " is smaller than " + num2);
+                } else {
+                    System.out.println(num2 + " is smaller than " + num1);
+                }
+
+            }
+        }
+
+        // Close the Scanner
+        in.close();
+    }
+}
